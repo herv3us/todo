@@ -10,20 +10,19 @@
   & form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-  }
-
-  &-todo {
-    &checkbox {
-      background-color: green;
-    }
+    justify-content: center;
   }
 
   & input {
     padding: 1rem;
     border-radius: 0.3rem;
     border: 1px solid $primary;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 2px 3px 0 rgb(44, 43, 43);
+    }
   }
 
   & button {
@@ -35,5 +34,25 @@
     border: solid 1px $primary;
     text-transform: uppercase;
     font-weight: bold;
+  }
+
+  li {
+    padding: 0.1em;
+    margin-top: 0.3rem;
+    list-style-type: none;
+  }
+}
+
+.checkbox {
+  background-color: $background;
+
+  &-todo {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+
+    &-checked {
+      background-color: lawngreen;
+    }
   }
 }

@@ -4,7 +4,7 @@ import Todo from './Todo';
 function Home() {
   return (
     <div>
-      <h1>What to do!</h1>
+      <h1>What to do! 🤔</h1>
       <Todo />
     </div>
   );

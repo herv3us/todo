@@ -8,7 +8,7 @@ body {
   font-family: sans-serif;
 }
 
-div {
+h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,16 +26,17 @@ div {
 .whatToDo form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-.whatToDo-todocheckbox {
-  background-color: green;
+  justify-content: center;
 }
 .whatToDo input {
   padding: 1rem;
   border-radius: 0.3rem;
   border: 1px solid #eee;
+}
+.whatToDo input:focus {
+  outline: none;
+  box-shadow: 0 2px 3px 0 #2c2b2b;
 }
 .whatToDo button {
   font-family: inherit;
@@ -46,6 +47,23 @@ div {
   border: solid 1px #eee;
   text-transform: uppercase;
   font-weight: bold;
+}
+.whatToDo li {
+  padding: 0.1em;
+  margin-top: 0.3rem;
+  list-style-type: none;
+}
+
+.checkbox {
+  background-color: rgba(175, 85, 175, 0.884);
+}
+.checkbox-todo {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+.checkbox-todo-checked {
+  background-color: lawngreen;
 }
 
 /*# sourceMappingURL=index.css.map */
