@@ -1,0 +1,39 @@
+.whatToDo {
+  background-color: $background-darker;
+  padding: 1em;
+  border-radius: 0.3rem;
+
+  &-not-done {
+    padding: 0.3rem 3rem;
+  }
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-todo {
+    &checkbox {
+      background-color: green;
+    }
+  }
+
+  & input {
+    padding: 1rem;
+    border-radius: 0.3rem;
+    border: 1px solid $primary;
+  }
+
+  & button {
+    font-family: inherit;
+    margin-top: 0.3rem;
+    padding: 0.5rem 0.9rem;
+    color: $primary;
+    background-color: $background-darker;
+    border: solid 1px $primary;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}

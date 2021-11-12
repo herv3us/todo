@@ -1,0 +1,51 @@
+body {
+  background-color: rgba(175, 85, 175, 0.884);
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatToDo {
+  background-color: rgba(175, 87, 175, 0.712);
+  padding: 1em;
+  border-radius: 0.3rem;
+}
+.whatToDo-not-done {
+  padding: 0.3rem 3rem;
+}
+.whatToDo form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.whatToDo-todocheckbox {
+  background-color: green;
+}
+.whatToDo input {
+  padding: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid #eee;
+}
+.whatToDo button {
+  font-family: inherit;
+  margin-top: 0.3rem;
+  padding: 0.5rem 0.9rem;
+  color: #eee;
+  background-color: rgba(175, 87, 175, 0.712);
+  border: solid 1px #eee;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=index.css.map */
