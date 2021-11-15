@@ -18,13 +18,11 @@ function Todo({
       </form>
       <ul className="whatToDo-not-done">
         {todos.map((todo) => (
-          <div className="whatToDo-not-done-todo">
-            <div className="checkbox">
-              <li key={todo.id} className=" checkbox-container">
-                {todo.content} <br />
-                <button onClick={() => handleClick(todo.id)}>Delete</button>
-              </li>
-            </div>
+          <div key={todo.id} className="whatToDo-not-done-todo">
+            <li className=" checkbox-container">
+              {todo.content} <br />
+              <button onClick={() => handleClick(todo.id)}>Delete</button>
+            </li>
           </div>
         ))}
       </ul>

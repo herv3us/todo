@@ -32,8 +32,12 @@
     color: $primary;
     background-color: $background-darker;
     border: solid 1px $primary;
+    border-radius: 0.2rem;
     text-transform: uppercase;
     font-weight: bold;
+
+    &:hover {
+    }
   }
 
   li {

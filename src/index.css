@@ -45,6 +45,7 @@ h1 {
   color: #eee;
   background-color: rgba(175, 87, 175, 0.712);
   border: solid 1px #eee;
+  border-radius: 0.2rem;
   text-transform: uppercase;
   font-weight: bold;
 }
