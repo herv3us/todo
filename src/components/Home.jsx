@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { nanoid } from 'nanoid';
 import Todo from './Todo';
 
 function Home() {
@@ -7,22 +8,25 @@ function Home() {
     {
       content: 'Buy Chocolate',
       isDone: false,
+      id: nanoid(30),
     },
     {
       content: 'Get Lowa to the hairdresser',
       isDone: false,
+      id: nanoid(30),
     },
   ]);
 
   const createNewTodo = (e, createNewTodo) => {
     e.preventDefault();
+    let newTodos = [...todos];
 
     console.log(createNewTodo);
     const newTodo = {
       content: createNewTodo,
       isDone: false,
+      id: nanoid(30),
     };
-    let newTodos = [...todos];
     newTodos = [...todos, newTodo];
     setTodos(newTodos);
   };
@@ -38,6 +42,14 @@ function Home() {
     setInputValue(e);
   };
 
+  const handleClick = (id) => {
+    setTodos((prevTodos) => {
+      return prevTodos.filter((todo) => {
+        return id !== todo.id;
+      });
+    });
+  };
+
   return (
     <div>
       <h1>What to do! 🤔</h1>
@@ -46,6 +58,7 @@ function Home() {
         inputValue={inputValue}
         handleKeyDown={handleKeyDown}
         handleOnChange={handleOnChange}
+        handleClick={handleClick}
       />
     </div>
   );

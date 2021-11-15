@@ -1,6 +1,10 @@
-import React, { useState } from 'react';
-
-function Todo({ todos, inputValue, handleKeyDown, handleOnChange }) {
+function Todo({
+  todos,
+  inputValue,
+  handleKeyDown,
+  handleOnChange,
+  handleClick,
+}) {
   return (
     <div className="whatToDo">
       <form className="todo-list">
@@ -16,12 +20,9 @@ function Todo({ todos, inputValue, handleKeyDown, handleOnChange }) {
         {todos.map((todo) => (
           <div className="whatToDo-not-done-todo">
             <div className="checkbox">
-              <li
-                key={Math.floor(Math.random() * 10)}
-                className=" checkbox-container"
-              >
-                <input type="checkbox" className="checkbox-todo" />{' '}
+              <li key={todo.id} className=" checkbox-container">
                 {todo.content} <br />
+                <button onClick={() => handleClick(todo.id)}>Delete</button>
               </li>
             </div>
           </div>
