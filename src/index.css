@@ -41,13 +41,17 @@ h1 {
 .whatToDo button {
   font-family: inherit;
   margin-top: 0.3rem;
-  padding: 0.5rem 0.9rem;
+  padding: 0.5em 0.7em;
   color: #eee;
   background-color: rgba(175, 87, 175, 0.712);
   border: solid 1px #eee;
   border-radius: 0.2rem;
   text-transform: uppercase;
   font-weight: bold;
+}
+.whatToDo button:hover {
+  background-color: #eee;
+  color: rgba(175, 87, 175, 0.712);
 }
 .whatToDo li {
   padding: 0.1em;
